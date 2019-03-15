@@ -44,7 +44,7 @@ bash mappings are only indicated when different from *bashing*
 | w   | del prev word            |                        |                |
 | x   | CtrlX Mode               |                        | swap position  |
 | y   | yank previous text       | insert char above      | paste          |
-| z   | insert char above        |                        | suspend        |
+| z   |                          |                        | suspend        |
 
 Regarding mappings which are shadowed, use Control+g
 
