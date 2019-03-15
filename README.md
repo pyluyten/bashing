@@ -1,16 +1,16 @@
-**bash shortcuts in vim insert mode**
+This plugin is a fork of Tim Pope vim-rsi plugin with following changes
+i do not care shadowing a vim mapping.
 
-These mappings make vim insert mode offer use bash shortcuts,
-like Control+k to delete up to end of line.
-Some bash shortcuts already exist in vim : C-h, C-w, C-u...
+- Control+d : use readline mapping. To delete indent use Control+g d
+- Control+k : use readline mapping. To insert dygrah use Control+g k
+- Control+t : use readline mapping. To insert insert, Control+g t
+- Control+y : yank previous text
 
-Sometimes we shadow an existing vim shortcut.
-For example C-a is beginning of line in bash
-we shadow "insert previously inserted text."
-so this is remaped to C-g a.
+# what is vim-rsi
 
-Alt mappings are not handled yet because
-depending on your env different mappings are necessary.
+vim-rsi makes vim user readline (bash) shortcuts in
+- insert mode
+- command mode
 
 # mappings
 
@@ -55,3 +55,6 @@ Regarding mappings which are shadowed, use Control+g
 | k                | enter digraph      |
 | t                | indent             |
 
+# License
+
+This plugin uses the same license than vim.
