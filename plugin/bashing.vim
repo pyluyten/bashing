@@ -60,6 +60,12 @@ cnoremap <expr> <C-F> getcmdpos()>strlen(getcmdline())?&cedit:"\<Lt>Right>"
 inoremap <C-k> <Esc>C
 inoremap <C-g>k <C-k>
 
+" j copy char above
+inoremap <C-j> <C-y>
+
+" l copy char below
+inoremap <C-l> <C-e>
+
 " t transpose. To change indent use gt.
 cnoremap <expr> <C-T> <SID>transpose()
 inoremap <C-t> <Esc>xpa

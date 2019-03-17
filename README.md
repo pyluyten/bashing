@@ -21,7 +21,7 @@ bash mappings are only indicated when different from *bashing*
 |-----|--------------------------|------------------------|----------------|
 | a   | beg of line              | yank previous text     |                |
 | b   | backw char               |                        |                |
-| c   | escape                   |                        | intr           |
+| c   |                          |                        | intr           |
 | d   | del next char            | remove indent          |                |
 | e   | end of line              | insert char below      |                |
 | f   | forward char             |                        |                |
@@ -33,11 +33,11 @@ bash mappings are only indicated when different from *bashing*
 | l   | copy char below          |                        | clear          |
 | m   | ENTER                    |                        |                |
 | n   | next keyword             |                        | next command   |
-| o   | jump                     |                        | ENTER          |
+| o   | normal mode command      |                        | ENTER          |
 | p   | previous keyword         |                        | prev command   |
-| q   | *control+v*              |                        | restart output |
+| q   |                          |                        | restart output |
 | r   | register                 |                        | history        |
-| s   | *cv*                     |                        | stop output    |
+| s   |                          |                        | stop output    |
 | t   | swap chars               | indent                 |                |
 | u   | delete up to beg of line |                        |                |
 | v   | quoted insert            |                        | ?              |
@@ -46,14 +46,21 @@ bash mappings are only indicated when different from *bashing*
 | y   | yank previous text       | insert char above      | paste          |
 | z   |                          |                        | suspend        |
 
-Regarding mappings which are shadowed, use Control+g
+Some mappings are shaddowed. These func need a direct mapping to prove useful.
 
-| prefix C-g + key | function           |
-|------------------|--------------------|
-| a                | yank previous text |
-| d                | remove indent      |
-| k                | enter digraph      |
-| t                | indent             |
+| key | bashing              | former vim insert mode |
+|-----|----------------------|------------------------|
+| j   | copy character above | newline                |
+| l   | copy character below |                        |
+
+These other func are fine with a prefix mapping, control+g...
+
+| C-g + C- | function           |
+|----------|--------------------|
+| a        | yank previous text |
+| d        | remove indent      |
+| k        | enter digraph      |
+| t        | indent             |
 
 # License
 
